@@ -1,0 +1,45 @@
+---
+const ourExperience = [
+  {
+    step: '01',
+    name: 'Experienced Support Engineers',
+    description:
+      'Our engineers come with hands-on experience in technical support for enterprise applications. They are ready to hit the ground running, resolving issues with minimal oversight and maximum efficiency.',
+  },
+  {
+    step: '02',
+    name: 'Enterprise application Support',
+    description:
+      'We provide engineers who specialize in maintaining and troubleshooting business-critical applications. With a deep understanding of your tools, they ensure continuous operational efficiency.',
+  },
+  {
+    step: '03',
+    name: 'Cloud Environment Expertise',
+    description:
+      'Our engineers have solid experience with cloud platforms like Azure, ensuring optimal performance, scalability, and security in your virtual environments. They integrate seamlessly into your processes, solving issues swiftly without the need for extra oversight.',
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-12 sm:gap-16">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our Experience</h2>
+      <div class="grid gap-8 lg:grid-cols-3">
+        {
+          ourExperience.map((ourExperience) => (
+            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+              <p class="text-sm">{ourExperience.step}</p>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl font-medium">{ourExperience.name}</h3>
+                <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                  {ourExperience.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
