@@ -8,6 +8,7 @@ export default defineConfig({
   base: '/SUYpport-page/',
   experimental: {
     viewTransitions: true,
+    optimizeDeps: true, 
   },
   integrations: [tailwind(), compress()],
 });
