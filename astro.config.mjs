@@ -4,6 +4,7 @@ import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://SantiagoGarreta.github.io',
   base: '/SUYpport-page/',
   experimental: {
     viewTransitions: true,
